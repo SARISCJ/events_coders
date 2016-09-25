@@ -1,6 +1,9 @@
-
-
 /* HOJA DE TRABAJO */
+body {
+  font-family: 'Raleway', 'arial';
+  text-align:center;
+}
+
 .portada{ 
 	background:url(../images/diseños.jpg);
 	height: 212px;
@@ -12,7 +15,7 @@
 
 .fondo{ 
 	background:url(../images/background1.jpg);
-	height: 900px;
+	height: 920px;
 	width: 100%;
 	margin:0px auto;
 	padding-top:20px;
@@ -20,7 +23,66 @@
 	background-size: cover;
 }
 
-.portada:hover{
-  color: orange;
-  border: none;
+#etiquetas {
+	float: left;
+	display: inline-block;
+	width: 100px;
+	height: 750px;
+	padding: 5px 10px;
+	margin: 6% 2%;
+}
+
+#hoja {
+	float: left;
+	display: inline-block;
+	width: 1050px;
+	height: 780px;
+	padding: 5px 10px;
+	margin: 6% 2%;
+	background: #eee;
+	text-align: center;
+  background: #fff;
+  box-shadow: 
+    0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+    0px 0px 12px rgba( 0,0,0,0.33 );
+  border-radius: 5px;
+  border: 1px solid #cacaca;
+}
+
+#pane {
+	position: absolute;
+	width: 160px;
+height: 80px;
+top: 390px;
+left: 25px;
+	margin: 0;
+	padding: 0;
+	z-index: 99;
+	border: 2px solid orange;
+	background: #fefefe;
+}
+
+#title {
+	background: orange;
+	color: black;
+	font-size: 14px;
+	height: 30px;
+	text-align: center;
+}
+
+#ghostpane {
+	opacity: 0.2;
+	width: 45%;
+	height: 45%;
+	top: 20%;
+	left: 20%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	z-index: 98;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
 }
