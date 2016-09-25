@@ -7,12 +7,18 @@
     float: left;
 }
 #div1, #div2{
-	background: red;
-	width:336px;
-	height:69px;
+	background: white;
+	width:120px;
+	overflow: auto;
 	display: inline-block;
-	margin: 10px;
+	margin: 20px;
+	resize: both;
+	border:1px solid black;
+	padding: 35px;
+	position: absolute;
 }
 #div2{
 	background: green;
+	resize: both;
+
 }
