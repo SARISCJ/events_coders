@@ -1,0 +1,18 @@
+#papel{
+	width: 550px;
+    height: 570px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    display: inline-block;
+    float: left;
+}
+#div1, #div2{
+	background: red;
+	width:336px;
+	height:69px;
+	display: inline-block;
+	margin: 10px;
+}
+#div2{
+	background: green;
+}
