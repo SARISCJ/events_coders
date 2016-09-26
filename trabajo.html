@@ -6,17 +6,19 @@
     <title>EVENTS CODERS</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="favicon.ico">
+    <link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<div class="portada">
 		</div>
 		<div class="container fondo">
-			<div id="papel" ondrop="drop(event)" ondragover="allowDrop(event)">
-				<h2>Hoja de Trabajo</h2>
-			</div>
+			<section id="papel" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<h2>Hoja de Trabajo</h2>
+			</section>
 			<div id="etiquetas">
 				<h2>Etiquetas</h2>
+				<button id="btn" class="btn btn-primary" onclick="addDiv()">Add</button>
 				<div id="div1" draggable="true" 			ondragstart= "drag(event)"  ></div>
 				<div id="div2" draggable="true" ondragstart= "drag(event)" ></div>
 			</div>

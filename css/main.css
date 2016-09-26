@@ -1,7 +1,8 @@
 /* HOJA DE TRABAJO */
 body {
   font-family: 'Raleway', 'arial';
-  text-align:center;
+  cursor: url('http://ionicframework.com/img/finger.png'), auto; }
+
 }
 
 .portada{ 
@@ -47,7 +48,7 @@ body {
   border: 1px solid #cacaca;
 }
 
-#div1, #div2{
+section div {
 	background: white;
 	width:120px;
 	overflow: auto;
@@ -57,9 +58,14 @@ body {
 	border:1px solid black;
 	padding: 35px;
 	position: absolute;
+	left: 2%;
+	top: 25%;
 }
-#div2{
-	background: green;
-	resize: both;
 
+
+#btn{
+  margin-top: 20px;
+  background: #ff6666;
+  border: 1px solid #ff6666;
+  outline:none;
 }
