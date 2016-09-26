@@ -33,5 +33,6 @@ element.addEventListener("click", function(event) {
         span.appendChild(texto);
         return false;
       }
+    } 
   }
 });
