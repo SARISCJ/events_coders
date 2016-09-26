@@ -1,6 +1,9 @@
-
-
 /* HOJA DE TRABAJO */
+body {
+  font-family: 'Raleway', 'arial';
+  text-align:center;
+}
+
 .portada{ 
 	background:url(../images/diseños.jpg);
 	height: 212px;
@@ -12,15 +15,52 @@
 
 .fondo{ 
 	background:url(../images/background1.jpg);
-	height: 900px;
+	height: 1000px;
 	width: 100%;
 	margin:0px auto;
-	padding-top:20px;
-	margin-bottom: 10px;
 	background-size: cover;
 }
 
-.portada:hover{
-  color: orange;
-  border: none;
+#etiquetas {
+	float: left;
+	display: inline-block;
+	width: 150px;
+	height: 750px;
+	padding: 5px 10px;
+	margin: 6% 2%;
+}
+
+#papel {
+	float: left;
+	display: inline-block;
+	width: 800px;
+	height: 880px;
+	padding: 5px 10px;
+	margin: 6% 2% 4% 2%;
+	background: #eee;
+	text-align: center;
+  background: #fff;
+  box-shadow: 
+    0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+    0px 0px 12px rgba( 0,0,0,0.33 );
+  border-radius: 5px;
+  border: 1px solid #cacaca;
+}
+
+#div1, #div2{
+	background: white;
+	width:120px;
+	overflow: auto;
+	display: block;
+	margin: 20px;
+	resize: both;
+	border:1px solid black;
+	padding: 35px;
+	position: absolute;
+}
+
+#div2{
+	background: green;
+	resize: both;
+
 }
