@@ -36,3 +36,10 @@ element.addEventListener("click", function(event) {
     } 
   }
 });
+
+document.getElementById("nombre").addEventListener("change", myFunction);
+
+function myFunction() {
+  var x = document.getElementById("nombre");
+  x.value = x.value.toUpperCase();
+}
