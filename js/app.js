@@ -1,25 +1,38 @@
 
-function validar() {
-  var nombre = document.getElementById("nombre").value;
-  var email = document.getElementById("email").value;
-  var password = document.getElementById("password").value;
-  var expresion = /\w+@\w+\.+[a-z]/;
+var element = document.querySelector(".form-signup");
+  element.addEventListener("click", function(event) {
+  event.preventDefault();
+  validateForm();
+  });
 
-  if (nombre === "") {
-    alert("El campo nombre esta vacia");
-    return false;
-  }else if (email === ""){
-    alert("El campo email esta vacia");
-    return false;
-  }else if (email.length>30){
-    alert("Email es muy largo")
-    return false;
-  }else if(password.length<6){
-    alert("La contraseña solo deben tener máximo 6 caracteres");
-    return false;
-  }else if(!expresion.test(email)){
-    alert("Email no es válido");
-    return false;
-  }
-}
+  function validateForm() {
+    var nombre = document.getElementById("nombre").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
 
+    if(nombre == null || nombre.length == 0 || /^\s+$/.test(nombre)){
+      var span = document.createElement("span");
+      var referencia= document.getElementById("nombre");
+      var padre=referencia.parentNode;
+      padre.insertBefore(span,referencia);
+      var texto = document.createTextNode("Debe ingresar su nombre");
+      span.appendChild(texto);
+      return false;
+    } if(!(/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(email))) {
+      var span = document.createElement("span");
+      var referencia= document.getElementById("email");
+      var padre=referencia.parentNode;
+      padre.insertBefore(span,referencia);
+      var texto = document.createTextNode("Verifique su email");
+      span.appendChild(texto);
+      return false;
+    } if(password.length < 6){
+      var referencia= document.getElementById("password");
+      var padre=referencia.parentNode;
+      padre.insertBefore(span,referencia);
+      var texto = document.createTextNode("Ingresa una contraseña válida");
+      span.appendChild(texto);
+      return false;
+     }
+     return true;
+  } 
