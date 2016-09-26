@@ -15,30 +15,28 @@ body {
 
 .fondo{ 
 	background:url(../images/background1.jpg);
-	height: 920px;
+	height: 1000px;
 	width: 100%;
 	margin:0px auto;
-	padding-top:20px;
-	margin-bottom: 10px;
 	background-size: cover;
 }
 
 #etiquetas {
 	float: left;
 	display: inline-block;
-	width: 100px;
+	width: 150px;
 	height: 750px;
 	padding: 5px 10px;
 	margin: 6% 2%;
 }
 
-#hoja {
+#papel {
 	float: left;
 	display: inline-block;
-	width: 1050px;
-	height: 780px;
+	width: 800px;
+	height: 880px;
 	padding: 5px 10px;
-	margin: 6% 2%;
+	margin: 6% 2% 4% 2%;
 	background: #eee;
 	text-align: center;
   background: #fff;
@@ -49,40 +47,19 @@ body {
   border: 1px solid #cacaca;
 }
 
-#pane {
+#div1, #div2{
+	background: white;
+	width:120px;
+	overflow: auto;
+	display: inline-block;
+	margin: 20px;
+	resize: both;
+	border:1px solid black;
+	padding: 35px;
 	position: absolute;
-	width: 160px;
-height: 80px;
-top: 390px;
-left: 25px;
-	margin: 0;
-	padding: 0;
-	z-index: 99;
-	border: 2px solid orange;
-	background: #fefefe;
 }
+#div2{
+	background: green;
+	resize: both;
 
-#title {
-	background: orange;
-	color: black;
-	font-size: 14px;
-	height: 30px;
-	text-align: center;
-}
-
-#ghostpane {
-	opacity: 0.2;
-	width: 45%;
-	height: 45%;
-	top: 20%;
-	left: 20%;
-	position: absolute;
-	margin: 0;
-	padding: 0;
-	z-index: 98;
-	-webkit-transition: all 0.25s ease-in-out;
-	-moz-transition: all 0.25s ease-in-out;
-	-ms-transition: all 0.25s ease-in-out;
-	-o-transition: all 0.25s ease-in-out;
-	transition: all 0.25s ease-in-out;
 }

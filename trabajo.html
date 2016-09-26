@@ -12,17 +12,15 @@
 		<div class="portada">
 		</div>
 		<div class="container fondo">
+			<div id="papel" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<h2>Hoja de Trabajo</h2>
+			</div>
 			<div id="etiquetas">
 				<h2>Etiquetas</h2>
-				<div id="pane">
-					<div draggable="true" class="user" id="title" ondragstart="dragUser(this, event)" id="title">Etiqueta</div>
-				</div>
-				<div id="ghostpane"></div>
+				<div id="div1" draggable="true" 			ondragstart= "drag(event)"  ></div>
+				<div id="div2" draggable="true" ondragstart= "drag(event)" ></div>
 			</div>
-				<div id="hoja" ondrop="drag(event)" ondragover="allowDrop(event)">
-	    		<h2>Hoja de Trabajo</h2>
-				</div>
-			</div>
+		</div>
 	  <script type="text/javascript" src="js/app_trabajo.js"></script>
 	</body>
 </html>
